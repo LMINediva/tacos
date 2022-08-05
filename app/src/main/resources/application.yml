@@ -1,0 +1,62 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+  server:
+    port: 8080
+spring:
+  application:
+    name: tacos-security-custom
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 13879640liu
+    url: jdbc:mysql://localhost:3306/tacos?serverTimezone=UTC
+    username: root
+  jpa:
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      use-new-id-generator-mappings: false
+    show-sql: true
+  thymeleaf:
+    cache: true
+    check-template: true
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    excluded-view-names: ''
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+  profiles:
+    active:
+      - prod
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    tacos: DEBUG
+taco:
+  orders:
+    pageSize: 10
+
+  discount:
+    codes:
+      abcdef: 10
+
+
+---
+spring:
+  profiles: prod
+
+logging:
+  level:
+    tacos: WARN
