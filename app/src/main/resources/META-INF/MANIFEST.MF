@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Main-Class: com.lc.tacos.TacosApplication
+Class-Path: spring-boot-actuator-2.3.7.RELEASE.jar jsr305-1.3.9.jar unbe
+ scape-1.1.6.RELEASE.jar thymeleaf-extras-java8time-3.0.4.RELEASE.jar mo
+ ckito-core-3.3.3.jar serializer-2.7.2.jar jsonassert-1.5.0.jar htmlunit
+ -cssparser-1.11.0.jar htmlunit-driver-2.50.0.jar jakarta.persistence-ap
+ i-2.2.3.jar checker-compat-qual-2.0.0.jar spring-boot-starter-thymeleaf
+ -2.3.7.RELEASE.jar okio-1.17.2.jar json-smart-2.3.jar jaxb-runtime-2.3.
+ 3.jar attoparser-2.0.5.RELEASE.jar spring-context-5.2.12.RELEASE.jar ja
+ ckson-module-parameter-names-2.11.3.jar junit-jupiter-engine-5.6.3.jar 
+ jackson-databind-2.11.3.jar spring-beans-5.2.12.RELEASE.jar okhttp-3.14
+ .9.jar txw2-2.3.3.jar spring-boot-starter-tomcat-2.3.7.RELEASE.jar asm-
+ 5.0.4.jar jakarta.validation-api-2.0.2.jar selenium-java-3.141.59.jar s
+ pring-hateoas-1.1.3.RELEASE.jar jackson-annotations-2.11.3.jar accessor
+ s-smart-1.2.jar spring-security-test-5.3.6.RELEASE.jar selenium-edge-dr
+ iver-3.141.59.jar jakarta.transaction-api-1.3.3.jar jakarta.activation-
+ 1.2.2.jar snakeyaml-1.26.jar spring-boot-starter-json-2.3.7.RELEASE.jar
+  jakarta.activation-api-1.2.2.jar dec-0.1.2.jar htmlunit-2.60.0.jar xer
+ cesImpl-2.12.2.jar selenium-ie-driver-3.141.59.jar commons-io-2.10.0.ja
+ r log4j-api-2.13.3.jar spring-data-commons-2.3.6.RELEASE.jar junit-plat
+ form-commons-1.6.3.jar LatencyUtils-2.0.3.jar selenium-api-3.141.59.jar
+  jboss-logging-3.4.1.Final.jar thymeleaf-3.0.11.RELEASE.jar spring-boot
+ -autoconfigure-2.3.7.RELEASE.jar j2objc-annotations-1.1.jar websocket-a
+ pi-9.4.35.v20201120.jar spring-boot-starter-security-2.3.7.RELEASE.jar 
+ spring-webmvc-5.2.12.RELEASE.jar spring-boot-starter-aop-2.3.7.RELEASE.
+ jar istack-commons-runtime-3.0.11.jar jetty-util-9.4.35.v20201120.jar s
+ pring-test-5.2.12.RELEASE.jar spring-jcl-5.2.12.RELEASE.jar htmlunit-co
+ re-js-2.60.0.jar spring-data-jpa-2.3.6.RELEASE.jar hamcrest-core-2.2.ja
+ r jul-to-slf4j-1.7.30.jar micrometer-core-1.5.9.jar error_prone_annotat
+ ions-2.1.3.jar spring-security-config-5.3.6.RELEASE.jar junit-jupiter-a
+ pi-5.6.3.jar selenium-support-3.141.59.jar websocket-common-9.4.35.v202
+ 01120.jar spring-boot-starter-hateoas-2.3.7.RELEASE.jar byte-buddy-1.10
+ .18.jar classmate-1.5.1.jar xalan-2.7.2.jar neko-htmlunit-2.60.0.jar se
+ lenium-firefox-driver-3.141.59.jar spring-core-5.2.12.RELEASE.jar tomca
+ t-embed-websocket-9.0.41.jar jakarta.annotation-api-1.3.5.jar animal-sn
+ iffer-annotations-1.14.jar commons-text-1.9.jar websocket-client-9.4.35
+ .v20201120.jar spring-boot-starter-actuator-2.3.7.RELEASE.jar spring-bo
+ ot-2.3.7.RELEASE.jar opentest4j-1.2.0.jar spring-boot-starter-jdbc-2.3.
+ 7.RELEASE.jar spring-aspects-5.2.12.RELEASE.jar spring-security-web-5.3
+ .6.RELEASE.jar HdrHistogram-2.1.12.jar slf4j-api-1.7.30.jar commons-lan
+ g3-3.10.jar xml-apis-1.4.01.jar spring-security-core-5.3.6.RELEASE.jar 
+ jetty-io-9.4.35.v20201120.jar xmlunit-core-2.7.0.jar httpcore-4.4.14.ja
+ r logback-classic-1.2.3.jar jetty-http-9.4.35.v20201120.jar spring-expr
+ ession-5.2.12.RELEASE.jar jetty-client-9.4.35.v20201120.jar json-path-2
+ .4.0.jar log4j-to-slf4j-2.13.3.jar hamcrest-2.2.jar jakarta.xml.bind-ap
+ i-2.3.3.jar mockito-junit-jupiter-3.3.3.jar tomcat-embed-core-9.0.41.ja
+ r junit-jupiter-params-5.6.3.jar spring-boot-starter-test-2.3.7.RELEASE
+ .jar jackson-datatype-jsr310-2.11.3.jar spring-boot-devtools-2.3.7.RELE
+ ASE.jar HikariCP-3.4.5.jar javassist-3.27.0-GA.jar aspectjweaver-1.9.6.
+ jar selenium-safari-driver-3.141.59.jar dom4j-2.1.3.jar salvation2-3.0.
+ 0.jar guava-25.0-jre.jar jakarta.el-3.0.3.jar hibernate-validator-6.2.0
+ .Final.jar httpclient-4.5.13.jar junit-jupiter-5.6.3.jar spring-jdbc-5.
+ 2.12.RELEASE.jar junit-platform-engine-1.6.3.jar httpmime-4.5.13.jar se
+ lenium-chrome-driver-3.141.59.jar spring-aop-5.2.12.RELEASE.jar byte-bu
+ ddy-agent-1.10.18.jar commons-codec-1.14.jar selenium-remote-driver-3.1
+ 41.59.jar assertj-core-3.16.1.jar spring-boot-actuator-autoconfigure-2.
+ 3.7.RELEASE.jar spring-boot-starter-logging-2.3.7.RELEASE.jar logback-c
+ ore-1.2.3.jar commons-net-3.8.0.jar spring-orm-5.2.12.RELEASE.jar hiber
+ nate-core-5.4.25.Final.jar spring-tx-5.2.12.RELEASE.jar mysql-connector
+ -java-8.0.22.jar selenium-opera-driver-3.141.59.jar spring-boot-test-2.
+ 3.7.RELEASE.jar jackson-core-2.11.3.jar spring-boot-starter-data-jpa-2.
+ 3.7.RELEASE.jar hibernate-commons-annotations-5.1.2.Final.jar spring-bo
+ ot-test-autoconfigure-2.3.7.RELEASE.jar spring-boot-starter-web-2.3.7.R
+ ELEASE.jar thymeleaf-spring5-3.0.11.RELEASE.jar spring-web-5.2.12.RELEA
+ SE.jar jackson-datatype-jdk8-2.11.3.jar spring-boot-starter-2.3.7.RELEA
+ SE.jar android-json-0.0.20131108.vaadin1.jar antlr-2.7.7.jar junit-4.13
+ .1.jar objenesis-2.6.jar apiguardian-api-1.1.0.jar commons-exec-1.3.jar
+  jandex-2.1.3.Final.jar spring-plugin-core-2.0.0.RELEASE.jar
+

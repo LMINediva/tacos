@@ -1,29 +1,28 @@
-plugins {
-    id 'org.springframework.boot' version '2.3.7.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
-    id 'java'
-}
-
-group = 'com.lc'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
-
-configurations {
-    developmentOnly
-    runtimeClasspath {
-        extendsFrom developmentOnly
+//声明gradle脚本自身需要使用的资源，优先执行
+buildscript {
+    ext {
+        springBootVersion = '2.3.7.RELEASE'
     }
-    compileOnly {
-        extendsFrom annotationProcessor
+    repositories {
+        //本地maven仓库
+        mavenLocal()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
     }
 }
 
-repositories {
-    maven { url 'https://maven.aliyun.com/repository/public/' }
-    mavenLocal()
-    mavenCentral()
+// 所有项目共享的配置
+allprojects {
+    apply plugin: 'java-library'
+    group = 'com.lc'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = '1.8'
 }
 
+//所有子模块共享的配置
 subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
