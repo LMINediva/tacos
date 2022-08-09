@@ -8,3 +8,11 @@ dependencies {
     api project(':tacocloud-domain')
     api project(':tacocloud-data')
 }
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

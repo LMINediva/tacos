@@ -7,3 +7,11 @@ repositories {
 dependencies {
     api project(':tacocloud-domain')
 }
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

@@ -3,3 +3,11 @@ repositories {
     mavenLocal()
     mavenCentral()
 }
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

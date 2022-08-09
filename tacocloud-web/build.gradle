@@ -9,3 +9,11 @@ dependencies {
     api project(':tacocloud-data')
     api project(':tacocloud-config')
 }
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
