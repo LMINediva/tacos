@@ -17,11 +17,15 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     password: 13879640liu
-    url: jdbc:mysql://localhost:3306/tacos?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/tacos?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
     username: root
   jpa:
     database: MYSQL
     database-platform: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Shanghai
     hibernate:
       use-new-id-generator-mappings: false
     show-sql: true
