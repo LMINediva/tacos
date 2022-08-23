@@ -40,6 +40,9 @@ spring:
     mode: HTML5
     prefix: classpath:/templates/
     suffix: .html
+  data:
+    rest:
+      base-path: /api
   profiles:
     active:
       - prod
