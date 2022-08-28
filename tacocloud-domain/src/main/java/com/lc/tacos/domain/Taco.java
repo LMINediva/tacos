@@ -28,7 +28,7 @@ public class Taco {
 
     private Date createdAt;
 
-    @ManyToMany(targetEntity = Ingredient.class)
+    @ManyToMany(targetEntity = Ingredient.class, fetch = FetchType.EAGER)
     @NotEmpty(message = "你必须选择至少一种配料")
     private List<Ingredient> ingredients = new ArrayList<>();
 
