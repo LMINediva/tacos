@@ -40,7 +40,7 @@ spring:
     encoding: UTF-8
     excluded-view-names: ''
     mode: HTML5
-    prefix: classpath:/templates/
+    prefix: classpath:/templates/tacocloud-ui/
     suffix: .html
   data:
     rest:
