@@ -31,6 +31,10 @@ spring:
     show-sql: true
   hateoas:
     use-hal-as-default-json-media-type: false
+  security:
+    user:
+      name: lc
+      password: 13879640liu
   thymeleaf:
     cache: true
     check-template: true
@@ -40,7 +44,7 @@ spring:
     encoding: UTF-8
     excluded-view-names: ''
     mode: HTML5
-    prefix: classpath:/templates/tacocloud-ui/
+    prefix: classpath:/templates/
     suffix: .html
   data:
     rest:

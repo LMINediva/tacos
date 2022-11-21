@@ -11,4 +11,5 @@ dependencies {
     api project(':tacocloud-security')
     api project(':tacocloud-web')
     api project(':tacocloud-api')
+    api project(':tacocloud-messaging-jms')
 }

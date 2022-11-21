@@ -1,6 +1,3 @@
 rootProject.name = 'tacos'
-include 'tacocloud-ui', 'tacocloud-domain',
-        'tacocloud-data', 'tacocloud-security',
-        'tacocloud-web', 'tacocloud-config', 'app',
-        'tacocloud-api'
-
+include 'tacocloud-domain', 'tacocloud-data', 'tacocloud-security', 'tacocloud-config', 'tacocloud-web', 'tacocloud-api', 'tacocloud-ui', 'app', 'tacocloud-restclient'
+include 'tacocloud-messaging-jms', 'tacocloud-kitchen'

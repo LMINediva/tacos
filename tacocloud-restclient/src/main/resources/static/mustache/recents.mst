@@ -1,0 +1,11 @@
+<h2>这是一些最近创造的玉米卷杰作...</h2>
+<dl>
+  {{#.}}
+  <dt><b>{{name}}</b></dt>
+  <dd>
+    {{#ingredients}}
+      {{name}}, 
+    {{/ingredients}}
+  </dd>
+  {{/.}}
+</dl>

@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "taco.orders.page-size",
+      "type": "java.lang.String",
+      "description": "设置要在列表中显示的最大订单数."
+    },
+    {
+      "name": "taco.discount.codes",
+      "type": "java.util.Map<String, Integer>",
+      "description": "折扣码到折扣百分比的地图."
+    }
+  ]
+}

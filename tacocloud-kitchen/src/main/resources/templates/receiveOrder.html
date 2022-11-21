@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>接收到的订单</title>
+</head>
+<body>
+<h2>
+    <span th:text="${order.deliveryName}">的订单</span>
+</h2>
+<h3>配送到：</h3>
+<div>
+    <span th:text="${order.deliveryStreet}">街道地址</span><br/>
+    <span th:text="${order.deliveryCity}">城市</span>
+    <span th:text="${order.deliveryState}">州</span>
+    <span th:text="${order.deliveryZip}">邮政编码</span>
+</div>
+<h3>墨西哥煎玉米饼：</h3>
+<div th:each="taco : ${order.tacos}">
+    <b th:text="${taco.name}">墨西哥煎玉米饼名字</b><br/>
+    <ul>
+        <li th:each="ingredient : ${taco.ingredients}">
+            <span th:text="${ingredient.name}">配料</span>
+        </li>
+    </ul>
+</div>
+<p>点击浏览器刷新以拉去下一个订单。</p>
+</body>
+</html>

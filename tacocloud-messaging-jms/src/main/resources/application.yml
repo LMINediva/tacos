@@ -1,0 +1,11 @@
+# 这里给出的值实际上是默认值。
+# 但是在这里，它们被显示地设置为Artemis属性的一个示例。
+spring:
+  jms:
+    template:
+      default-destination: tacocloud.order.queue
+  artemis:
+    host: localhost
+    port: 61616
+    user: admin
+    password: admin

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh"
+      xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>煎饼云</title>
+    <script th:src="@{/scripts/recents.js}"></script>
+</head>
+<body>
+<section layout:fragment="main" class="content">
+    <a th:href="@{/design}" id="design">设计一个墨西哥煎玉米饼卷</a>
+    <div id="recents"></div>
+</section>
+</body>
+</html>

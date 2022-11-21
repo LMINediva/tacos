@@ -1,0 +1,17 @@
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    api project(':tacocloud-domain')
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

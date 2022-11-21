@@ -1,0 +1,16 @@
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

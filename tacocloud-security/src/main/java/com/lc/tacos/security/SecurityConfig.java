@@ -36,6 +36,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.POST, "/design", "/orders/**")
                 .permitAll()
 //                .access("hasRole('ROLE_USER')")
+                .antMatchers(HttpMethod.PUT, "/ingredientsx/**")
+                .permitAll()
                 .antMatchers("/", "/**")
                 .access("permitAll")
                 .and()
@@ -47,8 +49,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutSuccessUrl("/")
                 .and()
                 .csrf()
-                .csrfTokenRepository(
-                        CookieCsrfTokenRepository.withHttpOnlyFalse());
+                .disable()
+                /*.csrfTokenRepository(
+                        CookieCsrfTokenRepository.withHttpOnlyFalse())*/;
     }
 
     @Override

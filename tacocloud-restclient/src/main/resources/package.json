@@ -1,0 +1,15 @@
+{
+  "name": "tacocloud-restclient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lc",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "mustache": "^4.2.0"
+  }
+}
