@@ -11,5 +11,7 @@ dependencies {
     api project(':tacocloud-security')
     api project(':tacocloud-web')
     api project(':tacocloud-api')
-    api project(':tacocloud-messaging-jms')
+    //选择以下三种异步消息中的一种
+//    api project(':tacocloud-messaging-jms')
+    api project(':tacocloud-messaging-rabbitmq')
 }

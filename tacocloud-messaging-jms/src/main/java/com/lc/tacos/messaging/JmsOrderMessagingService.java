@@ -1,5 +1,6 @@
 package com.lc.tacos.messaging;
 
+import com.lc.tacos.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;

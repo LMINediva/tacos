@@ -1,0 +1,7 @@
+server:
+  port: 8081
+spring:
+  # 这里给出的值实际上是默认值。但它们在这里被明确设置为设置Artemis属性的示例。
+  jms:
+    template:
+      receive-timeout: 2

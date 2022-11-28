@@ -16,33 +16,33 @@ import java.util.List;
 
 /**
  * @author DELL
- * @date 2022/10/27 17:55
+ * @date 2022/11/28 21:24
  */
 @Controller
-@RequestMapping(path = "/convertAndSend")
+@RequestMapping("/rabbitmqSend")
 @CrossOrigin(origins = "*")
 public class OrderSenderController {
-    private JmsOrderMessagingService jmsOrderMessagingService;
+    private RabbitOrderMessagingService rabbitOrderMessagingService;
 
     @Autowired
-    public OrderSenderController(JmsOrderMessagingService jmsOrderMessagingService) {
-        this.jmsOrderMessagingService = jmsOrderMessagingService;
+    public OrderSenderController(RabbitOrderMessagingService rabbitOrderMessagingService) {
+        this.rabbitOrderMessagingService = rabbitOrderMessagingService;
     }
 
     @GetMapping("/order")
     @ResponseBody
     public String convertAndSendOrder() {
         Order order = buildOrder();
-        jmsOrderMessagingService.sendOrder(order);
+        rabbitOrderMessagingService.sendOrder(order);
         System.out.println("转换并发送订单");
-        return "发送消息成功";
+        return "发送消息成功！";
     }
 
     public Order buildOrder() {
         Date date = new Date();
         Order order = new Order();
         order.setPlacedAt(date);
-        order.setDeliveryName("通过AMQP发送的消息");
+        order.setDeliveryName("通过RabbitMQ发送的消息");
         order.setDeliveryStreet("龙归街");
         order.setDeliveryCity("广州市");
         order.setDeliveryState("广东省");

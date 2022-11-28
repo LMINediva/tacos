@@ -6,7 +6,7 @@ repositories {
 
 dependencies {
     api project(':tacocloud-domain')
-    implementation 'org.springframework.boot:spring-boot-starter-artemis'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
 }
 
 bootJar {
