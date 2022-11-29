@@ -1,0 +1,18 @@
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    api project(':tacocloud-domain')
+    implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.9.2'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

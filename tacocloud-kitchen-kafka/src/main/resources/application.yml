@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: rabbitmq-template, rabbitmq-listener
+    active: kafka-template, kafka-listener
   application:
     name: tacocloud-kitchen
   thymeleaf:

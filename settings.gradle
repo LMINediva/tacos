@@ -2,5 +2,5 @@ rootProject.name = 'tacos'
 include 'tacocloud-domain', 'tacocloud-data', 'tacocloud-security', 'tacocloud-config'
 include 'tacocloud-web', 'tacocloud-api', 'tacocloud-ui', 'app', 'tacocloud-restclient'
 include 'tacocloud-messaging-jms', 'tacocloud-kitchen-jms', 'tacocloud-messaging-rabbitmq'
-include 'tacocloud-kitchen-rabbitmq'
+include 'tacocloud-kitchen-rabbitmq', 'tacocloud-messaging-kafka', 'tacocloud-kitchen-kafka'
 
