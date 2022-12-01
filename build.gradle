@@ -45,6 +45,7 @@ subprojects {
         implementation group: 'org.seleniumhq.selenium', name: 'htmlunit-driver', version: '2.50.0'
         implementation group: 'net.sourceforge.htmlunit', name: 'htmlunit', version: '2.60.0'
         implementation group: 'com.jayway.jsonpath', name: 'json-path', version: '2.7.0'
+        implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
         compileOnly 'org.projectlombok:lombok'
         developmentOnly 'org.springframework.boot:spring-boot-devtools'
         runtimeOnly 'mysql:mysql-connector-java'
