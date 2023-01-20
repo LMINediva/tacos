@@ -20,6 +20,7 @@ build/
 *.iml
 *.ipr
 out/
+*.pfx
 
 ### NetBeans ###
 /nbproject/private/
@@ -30,3 +31,4 @@ out/
 
 ### VS Code ###
 .vscode/
+/app/src/main/resources/8934989_www.lezoc.top.pfx

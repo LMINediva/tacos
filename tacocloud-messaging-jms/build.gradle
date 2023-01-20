@@ -7,6 +7,7 @@ repositories {
 dependencies {
     api project(':tacocloud-domain')
     implementation 'org.springframework.boot:spring-boot-starter-artemis'
+    implementation group: 'org.messaginghub', name: 'pooled-jms', version: '3.0.0'
 }
 
 bootJar {

@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * @author DELL
@@ -18,7 +19,7 @@ import javax.persistence.Id;
 @RequiredArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
 @Entity
-public class Ingredient {
+public class Ingredient implements Serializable {
 
     @Id
     private final String id;

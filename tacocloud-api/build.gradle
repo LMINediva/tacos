@@ -8,6 +8,8 @@ dependencies {
     api project(':tacocloud-domain')
     api project(':tacocloud-data')
     api project(':tacocloud-security')
+    api project(':tacocloud-messaging-jms')
+    implementation 'org.springframework.boot:spring-boot-starter-artemis'
 }
 
 bootJar {

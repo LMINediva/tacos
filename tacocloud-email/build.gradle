@@ -1,0 +1,20 @@
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'jakarta.mail', name: 'jakarta.mail-api', version: '2.1.0'
+    implementation group: 'org.springframework.integration', name: 'spring-integration-mail', version: '6.0.1'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.10.0'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

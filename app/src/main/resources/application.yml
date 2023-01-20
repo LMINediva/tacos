@@ -10,7 +10,12 @@ management:
       exposure:
         include: '*'
   server:
-    port: 8080
+    port: 443
+    ssl:
+      enabled: true
+      key-store-type: PKCS12
+      key-store: classpath:8934989_www.lezoc.top.pfx
+      key-store-password: 1v73yk2a
 spring:
   application:
     name: tacos-security-custom
@@ -39,13 +44,14 @@ spring:
     cache: true
     check-template: true
     check-template-location: true
-    content-type: text/html
     enabled: true
     encoding: UTF-8
     excluded-view-names: ''
     mode: HTML5
     prefix: classpath:/templates/
     suffix: .html
+    servlet:
+      content-type: text/html
   data:
     rest:
       base-path: /api

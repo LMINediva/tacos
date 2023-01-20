@@ -2,6 +2,7 @@ package com.lc.tacos.api;
 
 import com.lc.tacos.data.OrderRepository;
 import com.lc.tacos.domain.Order;
+import com.lc.tacos.messaging.OrderMessagingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
@@ -17,10 +18,16 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 public class OrderApiController {
     private OrderRepository repo;
+    private OrderMessagingService orderMessages;
+    private EmailOrderService emailOrderService;
 
     @Autowired
-    public OrderApiController(OrderRepository repo) {
+    public OrderApiController(OrderRepository repo,
+                              OrderMessagingService orderMessages,
+                              EmailOrderService emailOrderService) {
         this.repo = repo;
+        this.orderMessages = orderMessages;
+        this.emailOrderService = emailOrderService;
     }
 
     @GetMapping(produces = "application/json")
@@ -85,5 +92,16 @@ public class OrderApiController {
             repo.deleteById(orderId);
         } catch (EmptyResultDataAccessException e) {
         }
+    }
+
+    /**
+     * 通过Email发送墨西哥煎饼卷订单
+     */
+    @PostMapping(path = "fromEmail", consumes = "application/json")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Order postOrderFromEmail(@RequestBody EmailOrder emailOrder) {
+        Order order = emailOrderService.convertEmailOrderToDomainOrder(emailOrder);
+        orderMessages.sendOrder(order);
+        return repo.save(order);
     }
 }

@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: jms-template
+    active: jms-listener, jms-template
   application:
     name: tacocloud-kitchen
   thymeleaf:

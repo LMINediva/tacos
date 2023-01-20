@@ -19,7 +19,8 @@ allprojects {
     apply plugin: 'java-library'
     group = 'com.lc'
     version = '0.0.1-SNAPSHOT'
-    sourceCompatibility = '1.8'
+    sourceCompatibility = JavaVersion.VERSION_12
+    targetCompatibility = JavaVersion.VERSION_12
 }
 
 //所有子模块共享的配置
@@ -40,6 +41,7 @@ subprojects {
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-hateoas'
         implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+        implementation 'org.springframework.boot:spring-boot-starter-integration'
         implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.0.Final'
         implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
         implementation group: 'org.seleniumhq.selenium', name: 'htmlunit-driver', version: '2.50.0'

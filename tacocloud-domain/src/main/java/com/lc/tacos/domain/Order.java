@@ -57,7 +57,7 @@ public class Order implements Serializable {
     @Digits(integer = 3, fraction = 0, message = "无效的CVV（信用卡三位数字验证码）")
     private String ccCVV;
 
-    @ManyToMany(targetEntity = Taco.class)
+    @ManyToMany(targetEntity = Taco.class, cascade = {CascadeType.ALL})
     private List<Taco> tacos = new ArrayList<>();
 
     public void addDesign(Taco design) {

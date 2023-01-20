@@ -14,7 +14,7 @@ import javax.jms.Message;
  */
 @Service
 public class JmsOrderMessagingService implements OrderMessagingService {
-    private JmsTemplate jms;
+    private final JmsTemplate jms;
 
     @Autowired
     public JmsOrderMessagingService(JmsTemplate jms) {

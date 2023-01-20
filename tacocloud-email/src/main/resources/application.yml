@@ -1,0 +1,13 @@
+spring:
+  main:
+    web-application-type: none
+
+tacocloud:
+  api:
+    url: http://localhost:8080/orders/fromEmail
+  email:
+    host: smtp.qq.com
+    mailbox: 2424097242@qq.com
+    username: 2424097242@qq.com
+    password: nhmgqkybeittdhhg
+    poll-rate: 10000
